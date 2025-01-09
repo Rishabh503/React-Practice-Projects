@@ -2,9 +2,9 @@ export const NavBar=()=>{
     return(
         <>  
             <nav className="w-[1440px] h-[72px] flex mx-auto justify-between gap-24 border">
-                <div  className="h-[76px] w-[42.75] mt-4 ml-[85px]">
-                    <img src="brand_logo.png  " alt="" />
-                </div>
+                    <div  className="h-[76px] w-[42.75] mt-4 ml-[85px]">
+                         <img src="brand_logo.png  " alt="" />
+                    </div>
               
                     <ul className="text-[poppins] text-[16px] font-[600] my-6 flex gap-6 ">
                     <li >  MENU </li>
