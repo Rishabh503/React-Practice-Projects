@@ -2,13 +2,20 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './index.css'
+import { NavBar } from './comoponents/navbar'
+import { Hero } from './comoponents/hero'
 
 
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+   < >
+      <NavBar/>
+      <Hero/>
+      <div>
+        
+        
+      </div>
+   </>
   )
 }
