@@ -3,14 +3,18 @@ import { useState } from "react";
 import { Help } from "./help";
 
 export const Game=(props)=>{
-    const handleExit=()=>{
-        props.value();
-    }
+   
     const [randomNumber,setRandomNumber]=useState(0)
     const [selectedNumber,setSelectedNumber]=useState(0)
     const [val,setVal]=useState("");
     const [score ,setScore]=useState(0)
     const [help,setHelp]=useState(false)
+
+
+    const handleExit=()=>{
+      props.value();}
+
+
     const generateRandomNumber = (min, max) => {
         return Math.floor(Math.random() * (max - min) + min);
     };
@@ -19,7 +23,7 @@ export const Game=(props)=>{
     }
 
     const randomNum=(e)=>{
-        // e.preventDefault()
+        e.preventDefault()
         if(!selectedNumber) return alert("select number")
         const newnum=generateRandomNumber(1,7)
         setRandomNumber(newnum);

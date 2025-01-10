@@ -6,16 +6,17 @@ export const Hero=()=>{
     const[email,setEmail]=useState();
     const[data,setData]=useState();
 
-    const handleSubmit=()=>{
+    const handleSubmit=(e)=>{
         e.preventDefault();
         console.log(name);
         console.log(email);
         console.log(data);
+        
     }
 
     return(
         
-        <main className="">
+        <main className="mx-[150px] -mt-10">
 
 
             <div className="h-[72px] mt-[50px] ml-[188px] font-extrabold text-5xl " >
@@ -43,12 +44,12 @@ export const Hero=()=>{
                         <label htmlFor="">Text 
                             <input required className="  border border-black  w-[472px] h-36 " type="text" value={data} onChange={(e)=>{setData(e.target.value)}} />
                         </label>
-                        <button type="submit" className="bg-black w-[220px] rounded-md ml-[250px] text-white h-9 px-4"> SUBMIT </button>
+                        <button type="submit" className="bg-black w-[200px] rounded-md ml-[275px] text-white h-9 p-2"> SUBMIT </button>
                     </form>
                     </div>
                 {/* photo div  */}
                 <div className="m-2 h-[615px] w-[608px] ">
-                <img className="inline object-cover shadow-md" src="photo2.svg" alt="" />
+                <img className="inline object-cover border border-red-200 shadow-md" src="photo2.svg" alt="" />
                 </div>
                 <div>
 
